@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Bhavith — Canara Engineering College, Java full-stack, Glowlogics Solutions internship." />
+    <title>Portfolio | About</title>
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <label class="theme-picker" title="Accent color">
+            <span class="visually-hidden">Accent color</span>
+            <input type="color" id="accent-color" value="#6366f1" />
+          </label>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="dark-mode-toggle"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="visually-hidden">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-title animate-on-scroll">About me</h1>
+          <p class="page-lead animate-on-scroll">
+            Final-year student at Canara Engineering College, focused on Java
+            full-stack development and learning in the field at Glowlogics
+            Solutions.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2 class="section-title animate-on-scroll">Background</h2>
+          <div class="prose animate-on-scroll">
+            <p>
+              I'm completing my engineering degree at Canara Engineering College
+              while growing as a Java full-stack developer. I like turning
+              requirements into working features — from APIs and data layers to
+              usable UIs.
+            </p>
+            <p>
+              My internship at Glowlogics Solutions gives me hands-on exposure
+              to professional codebases, teamwork, and shipping software in a real
+              environment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Skills</h2>
+          <ul class="skills-grid animate-on-scroll">
+            <li class="skill-pill">Java</li>
+            <li class="skill-pill">Spring / Spring Boot</li>
+            <li class="skill-pill">REST APIs</li>
+            <li class="skill-pill">SQL &amp; databases</li>
+            <li class="skill-pill">HTML5 &amp; CSS3</li>
+            <li class="skill-pill">JavaScript (ES6+)</li>
+            <li class="skill-pill">Git &amp; GitHub</li>
+            <li class="skill-pill">Full-stack fundamentals</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Education</h2>
+          <ol class="timeline">
+            <li class="timeline-item animate-on-scroll">
+              <span class="timeline-date">2022 — Present</span>
+              <h3 class="timeline-title">Bachelor of Engineering (final year)</h3>
+              <p class="timeline-meta">Canara Engineering College</p>
+            </li>
+            <li class="timeline-item animate-on-scroll">
+              <span class="timeline-date">Internship</span>
+              <h3 class="timeline-title">Glowlogics Solutions</h3>
+              <p class="timeline-meta">Software internship — applying Java full-stack skills on real projects</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bhavith. Built with HTML, CSS &amp; JS.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

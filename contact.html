@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Leave empty when the site is served by Spring Boot (same origin). For GitHub Pages + separate API, set to your API root, e.g. https://your-app.onrender.com -->
+    <meta name="portfolio-api-base" content="" />
+    <meta name="description" content="Contact — send a message." />
+    <title>Portfolio | Contact</title>
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <label class="theme-picker" title="Accent color">
+            <span class="visually-hidden">Accent color</span>
+            <input type="color" id="accent-color" value="#6366f1" />
+          </label>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="dark-mode-toggle"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="visually-hidden">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-title animate-on-scroll">Contact</h1>
+          <p class="page-lead animate-on-scroll">
+            Send a message below — input is checked in the browser, then submitted to
+            the Spring Boot API (<code>/api/contact</code>) when you run or deploy the
+            backend.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <form
+            class="contact-form animate-on-scroll"
+            id="contact-form"
+            novalidate
+            action="#"
+            method="post"
+          >
+            <div class="form-field">
+              <label for="contact-name">Name</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="80"
+                aria-describedby="name-hint name-error"
+              />
+              <p id="name-hint" class="field-hint">At least 2 characters.</p>
+              <p id="name-error" class="field-error" role="alert" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                aria-describedby="email-error"
+              />
+              <p id="email-error" class="field-error" role="alert" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Subject <span class="optional">(optional)</span></label>
+              <input
+                id="contact-subject"
+                name="subject"
+                type="text"
+                maxlength="120"
+                aria-describedby="subject-error"
+              />
+              <p id="subject-error" class="field-error" role="alert" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                maxlength="2000"
+                aria-describedby="message-hint message-error"
+              ></textarea>
+              <p id="message-hint" class="field-hint">At least 10 characters.</p>
+              <p id="message-error" class="field-error" role="alert" hidden></p>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="contact-submit">
+                Send message
+              </button>
+            </div>
+            <p id="form-server-error" class="field-error" role="alert" hidden></p>
+            <p id="form-success" class="form-success" role="status" tabindex="-1" hidden></p>
+          </form>
+
+          <ul class="contact-social animate-on-scroll" aria-label="Other ways to reach me">
+            <li>
+              <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bhavith. Built with HTML, CSS &amp; JS.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

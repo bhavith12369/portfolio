@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected projects with links and details." />
+    <title>Portfolio | Projects</title>
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <label class="theme-picker" title="Accent color">
+            <span class="visually-hidden">Accent color</span>
+            <input type="color" id="accent-color" value="#6366f1" />
+          </label>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="dark-mode-toggle"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="visually-hidden">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-title animate-on-scroll">Projects</h1>
+          <p class="page-lead animate-on-scroll">
+            A few things I've built. Replace images and links with your own work.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-grid">
+            <article class="project-card animate-on-scroll">
+              <a
+                class="project-image-link"
+                href="https://github.com/bhavith660"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-img"
+                  src="https://picsum.photos/seed/dashboard/640/400"
+                  alt="Screenshot of analytics dashboard project"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-body">
+                <h2 class="project-title">Analytics dashboard</h2>
+                <p class="project-desc">
+                  Responsive dashboard UI with charts, filters, and a dark
+                  theme. Built with vanilla JS and CSS Grid.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="link-arrow"
+                    href="https://github.com/bhavith660"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <a
+                    class="link-arrow"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <a
+                class="project-image-link"
+                href="https://github.com/bhavith660"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-img"
+                  src="https://picsum.photos/seed/landing/640/400"
+                  alt="Screenshot of landing page project"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-body">
+                <h2 class="project-title">Product landing page</h2>
+                <p class="project-desc">
+                  Marketing page with scroll animations, accessible navigation,
+                  and a contact form with client-side validation.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="link-arrow"
+                    href="https://github.com/bhavith660"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <a
+                    class="link-arrow"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+              <a
+                class="project-image-link"
+                href="https://github.com/bhavith660"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-img"
+                  src="https://picsum.photos/seed/tasks/640/400"
+                  alt="Screenshot of task manager project"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-body">
+                <h2 class="project-title">Task companion</h2>
+                <p class="project-desc">
+                  Lightweight task list using local storage, keyboard shortcuts,
+                  and focus management for screen readers.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="link-arrow"
+                    href="https://github.com/bhavith660"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <a
+                    class="link-arrow"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live demo</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bhavith. Built with HTML, CSS &amp; JS.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

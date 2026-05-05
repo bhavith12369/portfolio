@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhavith — final-year student at Canara Engineering College, Java full-stack developer, intern at Glowlogics Solutions."
+    />
+    <title>Portfolio | Home</title>
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <label class="theme-picker" title="Accent color">
+            <span class="visually-hidden">Accent color</span>
+            <input type="color" id="accent-color" value="#6366f1" />
+          </label>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="dark-mode-toggle"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="visually-hidden">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content animate-on-scroll">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 class="hero-title">Bhavith</h1>
+            <p class="hero-tagline">
+              Final-year engineering student at Canara Engineering College ·
+              Java full-stack development · Intern at Glowlogics Solutions.
+            </p>
+            <p class="hero-bio">
+              I'm passionate about building reliable backends and clean web
+              interfaces with Java, Spring, and modern frontend basics. Through
+              my internship at Glowlogics Solutions, I'm sharpening real-world
+              full-stack skills alongside my degree.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="projects.html">View projects</a>
+              <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+            </div>
+            <ul class="social-list" aria-label="Social links">
+              <li>
+                <a
+                  href="https://github.com/bhavith660"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="social-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-visual animate-on-scroll">
+            <div class="profile-frame">
+              <img
+                class="profile-img"
+                src="C:\Users\bhavi\OneDrive\Desktop\javaminiproject\2673.JPG"
+                alt="Portrait of Bhavith"
+                width="320"
+                height="320"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Highlights</h2>
+          <div class="highlights">
+            <article class="card animate-on-scroll">
+              <h3 class="card-title">Java full stack</h3>
+              <p>
+                Backend with Java &amp; Spring-style APIs, paired with responsive
+                HTML, CSS, and JavaScript on the frontend.
+              </p>
+            </article>
+            <article class="card animate-on-scroll">
+              <h3 class="card-title">Canara Engineering College</h3>
+              <p>
+                Final-year engineering student building a strong foundation in
+                software design, databases, and practical project work.
+              </p>
+            </article>
+            <article class="card animate-on-scroll">
+              <h3 class="card-title">Glowlogics Solutions</h3>
+              <p>
+                Internship experience applying classroom concepts to real
+                projects and professional development workflows.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bhavith. Built with HTML, CSS &amp; JS.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

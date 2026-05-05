@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Technical articles and notes from the blog." />
+    <title>Portfolio | Blog</title>
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <label class="theme-picker" title="Accent color">
+            <span class="visually-hidden">Accent color</span>
+            <input type="color" id="accent-color" value="#6366f1" />
+          </label>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="dark-mode-toggle"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="visually-hidden">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container">
+          <h1 class="page-title animate-on-scroll">Blog</h1>
+          <p class="page-lead animate-on-scroll">
+            Short technical articles. Swap these for your own posts or hook up a
+            CMS later.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <ul class="blog-list">
+            <li class="blog-item animate-on-scroll">
+              <article class="blog-card">
+                <time class="blog-date" datetime="2026-03-12">Mar 12, 2026</time>
+                <h2 class="blog-card-title">
+                  <a href="#">Flexbox patterns I use every day</a>
+                </h2>
+                <p class="blog-excerpt">
+                  Practical recipes for navigation bars, sticky footers, and
+                  equal-height columns without reaching for a framework.
+                </p>
+                <a class="link-arrow" href="#">Read more</a>
+              </article>
+            </li>
+            <li class="blog-item animate-on-scroll">
+              <article class="blog-card">
+                <time class="blog-date" datetime="2026-02-28">Feb 28, 2026</time>
+                <h2 class="blog-card-title">
+                  <a href="#">Form validation that users actually understand</a>
+                </h2>
+                <p class="blog-excerpt">
+                  Pairing HTML5 constraints with custom messages, live regions,
+                  and clear error recovery.
+                </p>
+                <a class="link-arrow" href="#">Read more</a>
+              </article>
+            </li>
+            <li class="blog-item animate-on-scroll">
+              <article class="blog-card">
+                <time class="blog-date" datetime="2026-01-15">Jan 15, 2026</time>
+                <h2 class="blog-card-title">
+                  <a href="#">Dark mode without flashing on load</a>
+                </h2>
+                <p class="blog-excerpt">
+                  Storing theme preference, respecting reduced motion, and
+                  keeping contrast in check.
+                </p>
+                <a class="link-arrow" href="#">Read more</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bhavith. Built with HTML, CSS &amp; JS.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/bhavith660" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
